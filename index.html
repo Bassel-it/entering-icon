@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="Programing , html ,css ,js" />
+    <meta name="description" content="what the programmer needs" />
+    <meta name="author" content="" />
+
+    
+    <!-- website title -->
+    <title>front end development template</title>
+    
+
+
+       <!-- font link -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+       <!-- website icon link -->
+     <link href="imgs/gl-ic.ico" rel="icon">
+    
+
+    <!-- style sheet link -->
+    <!-- <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+    <!-- Additional CSS Files -->
+    <!--
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+     -->
+
+     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+   <div id="app"></div>
+<script type="text/babel">
+
+// React Js Component type 1
+function GoogleL(){
+  return(
+
+<a href="https://www.google.com/"><img src="imgs/gl.png"/></a>
+
+)
+}
+
+// React Js Component type 2
+class App extends React.Component {
+  render(){
+    return(<a href="https://www.facebook.com/"><img src="imgs/fb.png"/></a>
+);
+  }
+}
+
+// divide a page to its primary Component
+class Icons extends React.Component {
+  render(){
+    return(
+      <div>
+      <Fb/>
+      <Google/>
+      <Github/>
+      </div>
+    )
+  }
+}
+class Fb extends React.Component {
+  render(){
+    return(
+      <a href="https://www.facebook.com/"><img src="imgs/fb.png"/></a>
+
+    )
+  }
+}
+
+class Google extends React.Component {
+  render(){
+    return(
+      <a href="https://www.google.com/"><img src="imgs/gl.png"/></a>
+    )
+  }
+}
+
+class Github extends React.Component {
+  render(){
+    return(
+      <a href="https://github.com/"><img src="imgs/github.png"/></a>
+
+    )
+  }
+}
+ReactDOM.render(<Icons/>,document.getElementById('app'));
+</script>
+
+
+
+
+
+    <!-- scripts Links-->
+    <!-- <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script> -->
+
+
+  </body>
+  </html>
